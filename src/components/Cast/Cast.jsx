@@ -13,6 +13,8 @@ const Cast = ({movieId, credits, setCredits}) => {
     fetchCreditDetails()
     
   }, [movieId])
+
+  
   
   return (  
     <>
