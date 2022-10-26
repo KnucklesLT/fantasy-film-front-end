@@ -23,7 +23,7 @@ const MovieSearch = (profile, setProfile) => {
     } catch (err) {
       console.log(err)
     }
-  }
+  } 
 
   return (  
     <main className={styles.main}>

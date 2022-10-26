@@ -67,11 +67,11 @@ const MovieResults = ({movies, profile, setProfile}) => {
     <main className={styles.container}>
       { movies.length ? 
         movies.map( movie => {
-          if (movie.backdrop_path)
+          if (movie.poster_path)
           return (
           
               <MovieCard 
-              key={movie._id}
+              key={movie.original_title}
               movie={movie} 
               handleAddToFav={handleAddToFav}
               handleDreamCast={handleDreamCast}/> 

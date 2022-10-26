@@ -9,7 +9,7 @@ const MovieCard = ({ movie, handleAddToFav, handleDreamCast }) => {
   const [credits, setCredits] = useState([])
   const navigate = useNavigate()
   return (
-    <div key={movie.id} className="card" style={{ width: "24rem" }}>
+    <div className="card" style={{ width: "24rem" }}>
       <img
         src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
         alt={movie.original_title}

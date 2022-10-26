@@ -9,18 +9,16 @@ import * as dreamcastService from "../../services/dreamcastService"
 const MovieDetails = ({profile}) => {
   const { id } = useParams()
   const [movie, setMovie] = useState(null)
-  console.log(profile)
   useEffect(() => {
     const fetchMovie = async () => {
       const moviedata = await dreamcastService.show(id)
       setMovie(moviedata)
     }
     fetchMovie()
-    console.log(movie)
   },[id])
 
   if(!movie) return <h1>Loading...</h1>
-  console.log(movie.cast)
+
   return (
     <>
       <h1>Movies</h1>
