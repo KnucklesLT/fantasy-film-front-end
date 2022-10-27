@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './MovieResults.module.css'
 import MovieCard from "../../components/MovieCard/MovieCard";
 import * as movieService from '../../services/movieService'

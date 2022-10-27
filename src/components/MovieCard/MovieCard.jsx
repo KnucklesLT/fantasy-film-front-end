@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Cast from "../Cast/Cast";
 
 import { useNavigate } from "react-router-dom";

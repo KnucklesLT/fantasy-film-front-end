@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react';
+import { useEffect } from 'react';
 import * as movieService from '../../services/movieService'
 
 const Cast = ({movieId, credits, setCredits}) => {
