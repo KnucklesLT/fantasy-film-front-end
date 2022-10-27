@@ -28,7 +28,8 @@ const MovieSearch = ({profile, setProfile}) => {
   return (  
     <main className={styles.main}>
     <>
-    <h1>Movie Search</h1>
+    <h1>Find a movie to start building your dreamcast!</h1>
+    <h4>Add a movie to your Favorites to create with later</h4>
     <form
       autoComplete="off"
       onSubmit={handleSubmit}

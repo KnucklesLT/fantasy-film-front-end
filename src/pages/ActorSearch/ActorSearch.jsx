@@ -27,7 +27,7 @@ const ActorSearch = ({profile, setProfile}) => {
 
   return (  
     <>
-      <h1>Actor Search</h1>
+      <h1>Find your favorite actors to add them to your Favorites!</h1>
       <form
       autoComplete="off"
       onSubmit={handleSubmit}

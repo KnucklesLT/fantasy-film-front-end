@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 15px;
 }
 
 .label,
@@ -23,3 +23,7 @@
   
 }
 
+h1, h4 {
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+}

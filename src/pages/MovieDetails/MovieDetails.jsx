@@ -60,6 +60,7 @@ const MovieDetails = ({ profile, setProfile }) => {
   return (
     <main className={styles.container}>
       <section className="card" style={{ 'width': '35rem' }}>
+      <h1>Replace cast members to create your Dreamcast!</h1>
         <img src={`${movie.image}`} className="card-img-top" alt={`${movie.name}`} style={{ 'width': '35rem', 'height': '50rem' }} />
         <div className="card-body">
           <h5 className="card-title">{movie.name}</h5>
@@ -78,11 +79,12 @@ const MovieDetails = ({ profile, setProfile }) => {
         <button
           onClick={() => handleDeleteDreamcast(movie._id)}
           className="btn btn-danger mt-auto"
-        >
+          >
           Delete this DreamCast
         </button>
       </section>
       <ActorList replaceActor={replaceActor} selectedCast={selectedCast} actors={actors}/>
+<div></div>
     </main>
   )
 }
