@@ -3,7 +3,7 @@ import styles from './MovieSearch.module.css'
 import * as movieService from '../../services/movieService'
 import MovieResults from '../../components/MovieResults/MovieResults'
 
-const MovieSearch = (profile, setProfile) => {
+const MovieSearch = ({profile, setProfile}) => {
 
   const [formData, setFormData] = useState({
     movieSearch: ''

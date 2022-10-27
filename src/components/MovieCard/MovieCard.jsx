@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const MovieCard = ({ movie, handleAddToFav, handleDreamCast }) => {
+const MovieCard = ({ movie, handleAddToFav, handleDreamCast, handleDeleteFromFav,favMovies }) => {
+  const isFavoriteMovie = favMovies?.includes(movie.id)
   const [credits, setCredits] = useState([])
   const navigate = useNavigate()
   return (
@@ -21,14 +22,28 @@ const MovieCard = ({ movie, handleAddToFav, handleDreamCast }) => {
         <ul>
           <Cast key={movie.id} movieId={movie.id} credits={credits} setCredits={setCredits} />
         </ul>
-        <button
-          className="btn btn-primary mt-auto"
-          onClick={()=> {
-            handleAddToFav(movie)
-          }}
-        >
-          Add to Favorite
-        </button>
+        {isFavoriteMovie 
+        
+        ?
+          <button
+            className="btn btn-danger mt-auto"
+            onClick={()=>{
+              handleDeleteFromFav(movie)
+            }}
+          >
+            delete
+          </button>
+        :
+          <button
+            className="btn btn-primary mt-auto"
+            onClick={()=> {
+              handleAddToFav(movie,credits)
+            }}
+          >
+            Add to Favorite
+          </button>
+        
+        }
         <button 
           className="btn btn-primary mt-auto"
           onClick={() => {

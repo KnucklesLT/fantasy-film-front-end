@@ -86,3 +86,20 @@ export async function show (id) {
     console.log(error)
   }
 }
+
+export async function deleteFav(movieData) {
+  try {
+    const res = await fetch(`${BASE_URL}/favorite`, {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${tokenService.getToken()}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(movieData)
+    })
+    return res.json()
+    
+  } catch (error) {
+    console.log(error);
+  }
+}
