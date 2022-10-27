@@ -39,7 +39,7 @@ const DreamcastDetails = ({user}) => {
                 </div>
               ))}
             </div>
-            {user.profile === dreamcast.author && <Link to={`/movies/${dreamcast._id}`}><button>View Details</button></Link>}
+            {user.profile === dreamcast.author && <Link to={`/movies/${dreamcast._id}`}><button className="btn btn-success">View Details</button></Link>}
             
           </div>
         ))}
