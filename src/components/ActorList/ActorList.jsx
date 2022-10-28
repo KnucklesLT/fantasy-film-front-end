@@ -69,7 +69,7 @@ const ActorList = ({ actors, selectedCast, replaceActor }) => {
   if (actors.length > 0) {
     return (
       <section>
-        <h3>Sort by Name</h3>
+        <h3>Choose an actor/actor to swap</h3>
         {alphabet}
         <div>
           {letter ? filteredList : unfilteredList}

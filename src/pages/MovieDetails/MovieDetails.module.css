@@ -28,9 +28,11 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  font-family: 'Rajdhani', sans-serif;
 }
 button{
   position: relative;
+  
 }
 p{
   position: relative;
@@ -45,5 +47,5 @@ p{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-
+  font-family: 'Rajdhani', sans-serif;
 }

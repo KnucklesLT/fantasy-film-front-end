@@ -18,7 +18,9 @@
 
 .welcome {
   border: 3px salmon;
-  padding: 0 840px 0 0;
+  /* padding: 0 1040px 0 0; */
+  margin-right: auto;
+  padding: 0%;
 }
 .container ul {
   margin: 0;
@@ -28,6 +30,8 @@
   font-weight: bold;
   align-items: center;
   justify-content: flex-end;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
 }
 
 .container li {
