@@ -21,7 +21,7 @@ const DreamcastDetails = ({user}) => {
     }
     fetchDreamcast()
   }, [])
-  // if (!dreamcast) return <Loading />
+  if (!dreamcasts) return <h1>Loading...</h1>
 
   return (
     <>
