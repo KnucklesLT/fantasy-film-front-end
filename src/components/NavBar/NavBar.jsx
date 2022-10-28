@@ -4,15 +4,6 @@ import styles from './NavBar.module.css'
 
 const NavBar = ({ user, handleLogout }) => {
   
-  // const publicLinks = (
-  //   <ul>
-  //     <li><NavLink to="/login">LOG IN</NavLink></li>
-  //     <li><NavLink to="/signup">SIGN UP</NavLink></li>
-  //   </ul>
-  // )
-  
-  
-  
   return (
     <nav className={styles.container}>
       {user ?
@@ -21,7 +12,6 @@ const NavBar = ({ user, handleLogout }) => {
           <a href="/">
           <li><img src="https://i.postimg.cc/Zn3N5rqQ/ALG-Logo.png" alt="logo" /></li></a>
           </div>
-          <li><Link to="/profiles">Profiles</Link></li>
           <li><Link to="/movie-search">Movie Search</Link></li>
           <li><Link to="/actor-search">Actor Search</Link></li>
           <li><Link to="/dreamcastlist">Dreamcasts</Link></li>
