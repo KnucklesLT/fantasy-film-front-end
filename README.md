@@ -12,7 +12,7 @@ Like fantasy sports, the idea of Fantasy Filmmaker is to allow the user the abil
 
 ## Application Pages
 
-
+![Main Page](src/assets/branding/Screen%20Shot%202022-10-28%20at%2010.28.06%20AM.png)
 
 ## Planning Materials
 -[Trello](https://trello.com/b/nJhah0ta/fantasy-filmmaking)
